@@ -46,8 +46,8 @@ main{}
   left:50%;text-indent:-9999px;
 }
 
-#top3, #intro, #test, #event, #buy, #cs{
-  margin:80px auto;
+#top3, #test, #event, #buy, #cs{
+  margin:150px auto;
   width:1200px;
 }
 
@@ -57,7 +57,7 @@ main section > h2{
   font-weight:bold;
   text-align:center;
 }
-#top3 .p01{
+.p01{
   text-align:center;
   font-size:var(--t-size14);
   line-height:50px;
@@ -134,15 +134,108 @@ main section > h2{
   font-weight:bold;
 }
 /* 견적내기 버튼 */
-.total_price_btn{
-  font-size:var(--t-size16);
+.btn{
+  font-size:var(--t-size14);
   border:1px solid #333;
-  padding:10px 0px;
-  width:200px;
+  padding:8px 0px;
+  width:150px;
   background:none;
   font-weight:bold;
+  transition:0.5s;
+  cursor:pointer;
 }
+.btn:hover{color:var(--t-color02);}
 .swiper-pagination2{
   text-align:center;
   transform:translateY(50px);
+}
+.g_btn{width:100px;}
+
+/* 버튼오버시 배경색 */
+.b_btn:hover{background:rgb(52, 52, 201);}
+.g_btn:hover{background:#616161;}
+
+/* 소개페이지 서식 */
+#intro{
+  text-align:center;
+  position:relative;
+  height:860px;
+  overflow: hidden;
+}
+#intro h2, .intro_title_left, .intro_title_right, .g_btn{
+  position:absolute;
+  z-index:2;
+}
+#intro video{
+  position:absolute;
+  left:0px;top:0px;
+  z-index:1;
+}
+
+#intro h2{
+  width:100%;
+  text-align:center;
+  margin:80px 0px;
+}
+.g_btn{
+  bottom:20px;
+  transform:translateX(-50%);
+}
+.intro_title_left, .intro_title_right{
+  font-size: 30px;
+  font-weight:bold;
+  line-height:40px;
+}
+.intro_title_left{
+  text-align:left;
+  left:300px;top:150px;
+}
+.intro_title_right{
+  text-align:right;
+  right:100px;
+  bottom:150px;;
+}
+
+/* 시승신청 */
+#test{text-align:center;}
+#test article{
+  border:1px solid #ccc;
+  width:430px;height:260px;
+  padding:15px;
+  display:inline-block;
+  margin-top:50px;
+  vertical-align: middle;
+}
+.test_drive_l{margin-right:30px;}
+.t_drive_r{
+  transform:translateY(-11px);
+}
+#test > article > h3{
+  font-size:24px;
+  padding-top: 20px;
+  font-weight:bold;
+  line-height:40px;
+}
+#test > article > p{
+  font-weight:500;
+  font-size:var(--f-size);
+  line-height:20px;
+  padding:20px 0px;
+}
+.test_d_btn{
+  background-color:var(--bg-color02);
+  color:#fff;
+  line-height:30px;
+  padding:10px 60px;
+}
+.test_d_btn01{
+  color:#00f;
+  position:relative;top:16px;
+  display:block;
+}
+.t_drive_p2{
+  transform:translateY(50px);
+}
+.test_drive_r .t_drive_p2{
+  transform:translateY(62px);
 }
