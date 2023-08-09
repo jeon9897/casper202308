@@ -239,3 +239,79 @@ main section > h2{
 .test_drive_r .t_drive_p2{
   transform:translateY(62px);
 }
+
+/* 이벤트 배너 */
+#event{
+  background:#ececec;
+  width:100%;height:500px;
+  padding:60px;
+}
+.e_banner{
+  width:1200px;height:440px;
+  margin:40px auto 0px auto;
+  position:relative;
+  overflow:hidden;
+}
+.e_banner > ul{
+  display:flex;
+  width:4800px;
+  position:absolute;
+}
+.e_banner .ctrl_btn{
+  width:280px;
+  display:flex;
+  justify-content:space-around;
+  position:absolute;
+  bottom:90px;left:50%;
+  transform:translateX(-50%);
+}
+.e_banner .ctrl_btn span{
+  width:60px;height:8px;
+  background:#ccc;
+  display:inline-block;
+}
+.act01{background:#333 !important;}
+
+/* 캐스퍼 구매안내 */
+#buy{
+  text-align:center;
+}
+#buy h3{
+  font-size:24px;
+  padding:60px 0px;
+  font-weight:500;
+}
+.t_color{
+  color:var(--t-color03);
+}
+
+#buy ul{
+  width:1000px;
+  margin:0px auto;
+}
+.clearfix::after{
+  clear:both;
+  display:block;
+  content:"";
+}
+#buy ul li{
+  float:left;
+  width:33.3333%;
+  margin-bottom:60px;
+}
+#buy ul li h4{
+  font-size:var(--t-size16);
+  font-weight:bold;
+}
+#buy ul li img{
+  width:70px;
+  padding:15px 0px;
+}
+#buy ul li .p03{
+  line-height:20px;
+}
+
+#buy iframe{
+  width:1000px;height:560px;
+  border:none;
+}
