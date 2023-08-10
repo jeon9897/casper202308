@@ -1,0 +1,9 @@
+git status(상태조회)
+git add . (상태추가)
+git commit -m '캐스퍼'
+git log (기록날짜확인)
+git push origin +main
+
+http://id.github.io/casper
+http://jeon9897.github.io/casper202308
+

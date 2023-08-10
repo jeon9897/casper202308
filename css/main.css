@@ -315,3 +315,105 @@ main section > h2{
   width:1000px;height:560px;
   border:none;
 }
+
+/* 고객지원 서식 */
+#cs{
+  width:100%;
+  background:#ececec;
+  padding:60px;
+  margin-bottom:0px
+}
+#cs > h2{margin-bottom:40px;}
+#cs article{
+  width:1200px;
+  margin:0px auto;
+  background:var(--bg-color01);
+  padding-bottom:30px;
+}
+#cs article h3{
+  font-size:var(--t-size18);
+  text-align:center;
+  padding:60px 0px 20px 0px;
+  font-weight: 500;
+}
+#cs article div{
+  width:50%;
+  float:left;
+  display:flex;
+  justify-content:center;
+  padding:20px 0px 20px 0px;
+}
+.cs_p{
+  width: 200px;
+  text-align: center;
+}
+.cs_p strong{
+  font-weight:500;
+  font-size:var(--t-size16);
+}
+.cs_p a, .link01{
+  color:var(--t-color03);
+  line-height:30px;
+}
+.cs_p a::after, .link01::after{
+  content:' >';
+  color:var(--t-color03);
+}
+
+/* 스프라이트 이미지 삽입 */
+.car, .member{
+  width:61px;height:40px;
+  display:inline-block;
+  background-image:url('../images/ico-main-guide.72b7c3f.png');
+  text-indent:-9999px;
+  background-size:300px;
+}
+.car{
+  background-position:126px 3px;
+  transform:translateY(27px);
+  /* position:relative;top:27px; */
+}
+.member{background-position:-237px 7px;}
+
+#cs dl{
+  padding-left:20px;
+  line-height:22px;
+}
+#cs dt{font-weight:bold;}
+#cs dd{color: #6d6d6d;}
+
+.cs_etc{
+  width:1200px;
+  margin:15px auto;
+  display:flex;
+  justify-content:space-between;
+}
+.cs_etc > li{
+  width: 168px;
+  height: 275px;
+  background: #fff;
+  padding: 0px 60px 10px 60px;
+  text-align:center;
+  position:relative;
+}
+.cs_etc > li > h3{
+  font-size:var(--t-size01);
+  text-align:left;
+  font-size:18px;
+  padding:60px 0px 20px 0px;
+  font-weight:bold;
+}
+.cs_etc > li > p{
+  text-align:left;
+  line-height:20px;
+}
+.cs_etc > li:last-child img{padding-top:18px;}
+.btn01{
+  background-color:var(--bg-color02);
+  color:#fff;
+  padding:8px 20px;
+  position:absolute;bottom:30px;
+  left:50%;
+  transform:translateX(-50%);
+}
+.ran_banner{text-align:center;}

@@ -65,4 +65,8 @@ $(document).ready(function(){
     Timer = setInterval(moveLeft, 3000);
   });
 
+  // 랜덤 배너이미지 
+  let ran_n = Math.floor(Math.random()*4+1);
+  $('.ran_banner img').attr('src','./images/banner0'+ran_n+'.jpg');
+
 });
